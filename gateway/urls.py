@@ -7,6 +7,7 @@ from .views import (
 
 urlpatterns = [
     path('auth/login/', AuthLoginProxyView.as_view()),
+    path('auth/register/', AuthLoginProxyView.as_view()),
     path('auth/session-status/', AuthSessionStatusProxyView.as_view()),
     path('auth/logout/', AuthLogoutProxyView.as_view()),
 ]
